@@ -1,0 +1,58 @@
+.info-card-container {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.info-card-container > .info-card-img {
+    width: 10rem;
+    height: 10rem;
+    z-index: 0;
+    background-color: white;
+}
+
+.info-card-container > .info-card-description {
+    color: black;
+    z-index: 1;
+    background-color: white;
+}
+
+@media screen and (min-width: 770px) {
+    .info-card-container {
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .info-card-container > .info-card-img {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 1.0;
+        transition: all 500ms ease-in-out;
+    }
+
+    .info-card-img.focused {
+        opacity: 0.4;
+    }
+
+    .info-card-container > .info-card-description {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-in-out;
+        transform: translateY(100%);
+        max-width: 100%;
+        background-color: transparent;
+        color: white;
+    }
+
+    .info-card-description.focused {
+        transform: translateY(0%);
+    }
+}

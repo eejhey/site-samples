@@ -1,0 +1,1 @@
+export const DefaultAvatar = "https://www.svgrepo.com/show/25159/user-silhouette.svg";

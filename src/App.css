@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+}
+
+#root-view-container {
+    width: 0;
+    height: 0;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

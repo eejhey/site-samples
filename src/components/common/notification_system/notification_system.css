@@ -1,0 +1,8 @@
+#notification-system {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 8999;
+    transition: all 200ms ease-out;
+}
