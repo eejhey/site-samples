@@ -1,0 +1,18 @@
+#top-nav-bar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#top-nav-bar > .top-nav-option {
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#top-nav-bar > .top-nav-option:hover {
+    background-color: rgb(68, 138, 255);
+    color: #fff;
+}

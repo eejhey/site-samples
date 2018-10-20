@@ -1,38 +1,39 @@
 import React from 'react';
 
-import Team from '../containers/team';
+import Button from '../components/common/button';
 
 export default class Home extends React.Component {
 
-    // state = {
-    //     isFocused: false,
-    // }
-
-    // onEnter = () => {
-    //     if (!this.state.isFocused) {
-    //         this.setState({isFocused: true});
-    //     }
-    // }
-
-    // onLeave = () => {
-    //     if (this.state.isFocused) {
-    //         this.setState({isFocused: false});
-    //     }
-    // }
+    onBandDiscoveryClick = (event) => {
+        this.props.history.push("/band-discovery");
+    }
 
     render() {
 
         return (
             <div
+                className="view"
                 style={{
                     backgroundColor: "#333",
-                    width: "100%",
-                    height: "100%",
+                    display: "flex",
+                    flexFlow: "column nowrap",
+                    justifyContent: "center",
+                    alignItems: "center",
                 }}>
-                <Team 
-                    width="100%"
-                    height="100%" />
+                <div
+                    style={{
+                        width: "50",
+                    }}>
+                    <div
+                        style={{
+                            margin: "1rem",
+                        }}>{"Choose a sample site"}</div>
+                    <Button
+                        onClick={this.onBandDiscoveryClick}>
+                        Band Discovery
+                    </Button>   
                 </div>
+            </div>
         )
     }
 }
